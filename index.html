@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form Skeleton Example using all HTML tags">
+  <meta name="author" content="Ayush Ojha">
+  <title>HTML Basic</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>HTML</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section: Introduction -->
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>
+        This page demonstrates a <b>Form Skeleton</b> while using 
+        <i>almost all HTML tags</i>. <u>Pay attention</u> to each 
+        element because it helps in <strong>learning HTML</strong>. 
+        I <em>really</em> enjoy building this. Water is H<sub>2</sub>O, 
+        and 2<sup>3</sup> = 8.
+      </p>
+      <hr>
+    </section>
+
+    <!-- Section: Form -->
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="/submit" method="POST">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="fullname" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob"><br><br>
+
+          <p>Gender:</p>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label><br><br>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+          </select><br><br>
+
+          <label><input type="checkbox" name="terms"> I agree to the terms</label><br><br>
+
+          <textarea name="comments" rows="4" cols="50" placeholder="Enter comments..."></textarea><br><br>
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          <button type="button" onclick="alert('Hello!')">Click Me</button>
+        </fieldset>
+      </form>
+      <hr>
+    </section>
+
+    <!-- Section: Table -->
+    <section id="table">
+      <h2>Sample Data Table</h2>
+      <table border="1">
+        <caption>Form Submissions</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ayush</td>
+            <td>ayush@example.com</td>
+            <td>India</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">End of Records</td></tr>
+        </tfoot>
+      </table>
+      <hr>
+    </section>
+
+    <!-- Section: Media -->
+    <section id="media">
+      <h2>Media Elements</h2>
+      <figure>
+        <img src="logo.jpg" alt="Form Image" width="200">
+        <figcaption>A simple form image</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="https://www.youtube.com/watch?v=h-ile9tMNM0" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <video controls width="320" height="240">
+        <source src="Screen Recording 2025-07-10 150946.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <h3>Canvas</h3>
+      <canvas id="myCanvas" width="200" height="100"></canvas>
+      <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 150, 50);
+      </script>
+
+      <h3>SVG </h3>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="red" />
+      </svg>
+      <hr>
+    </section>
+
+    <!-- Section: Lists -->
+    <section>
+      <h2>Lists</h2>
+      <p>Ordered List:</p>
+      <ol>
+        <li>Fill Form</li>
+        <li>Submit</li>
+      </ol>
+
+      <p>Unordered List:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+
+      <p>Description List:</p>
+      <dl>
+        <dt>Form</dt>
+        <dd>A structure to collect user data</dd>
+      </dl>
+    </section>
+  </main>
+
+  <!-- Aside -->
+  <aside>
+    <h3>Note</h3>
+    <p>This is a demo skeleton that uses most HTML tags.</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML. All rights reserved.</p>
+  </footer>
+</body>
+</html>
